@@ -1,14 +1,14 @@
 package com.codewithmosh;
 
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args){
-        Array numbers = new Array(3);
-        numbers.insert(10);
-        numbers.insert(20);
-        numbers.insert(30);
-        numbers.insert(40);
-        numbers.removeAt(0);
-        numbers.indexOf(20);
-        numbers.print();
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addFirst(5);
+        System.out.println(list);
     }
 }
