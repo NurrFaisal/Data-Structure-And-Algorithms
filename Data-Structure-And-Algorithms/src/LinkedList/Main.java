@@ -10,6 +10,7 @@ public class Main {
         linkedlist.addLast(40);
         var indexof = linkedlist.indexOf(40);
         System.out.println(indexof);
+        System.out.println(linkedlist.contains(30));
 
 
     }
