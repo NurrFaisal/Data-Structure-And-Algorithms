@@ -4,7 +4,9 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args){
-        var stringReverser = new StringReverser();
-        System.out.println(stringReverser.reverse("abcdefgh"));
+        String str = "(1 + 2)";
+        var exp = new Expression();
+        var result = exp.isBalanced(str);
+        System.out.println(result);
     }
 }
