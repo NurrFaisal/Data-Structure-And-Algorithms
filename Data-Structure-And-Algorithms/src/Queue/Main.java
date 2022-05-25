@@ -6,15 +6,28 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args){
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.add(10);
-        queue.add(20);
-        queue.add(30);
+//        Queue<Integer> queue = new ArrayDeque<>();
+//        queue.add(10);
+//        queue.add(20);
+//        queue.add(30);
 //        var front = queue.remove();
 //        System.out.println(queue);
 //        System.out.println(front);
 //        System.out.println(queue);
-        reverse(queue);
+//        reverse(queue);
+
+
+        ArrayQueue queue = new ArrayQueue(5);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.dequeue();
+        var item = queue.dequeue();
+        System.out.println(queue);
+        System.out.println(item);
+
+
     }
 
     public static void reverse(Queue<Integer> queue){
