@@ -24,6 +24,9 @@ public class Main {
         queue.enqueue(40);
         queue.dequeue();
         var item = queue.dequeue();
+        queue.enqueue(50);
+        queue.enqueue(60);
+        queue.enqueue(70);
         System.out.println(queue);
         System.out.println(item);
 
