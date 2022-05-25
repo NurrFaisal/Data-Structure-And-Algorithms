@@ -10,18 +10,10 @@ public class Main {
         queue.add(10);
         queue.add(20);
         queue.add(30);
-        queue.add(40);
-        reverse(queue);
+        var front = queue.remove();
+        System.out.println(queue);
+        System.out.println(front);
         System.out.println(queue);
     }
 
-    public static void reverse(Queue<Integer> queue){
-        Stack<Integer> stack = new Stack<>();
-        while (!queue.isEmpty()){
-            stack.push(queue.remove());
-        }
-        while (!stack.isEmpty()){
-            queue.add(stack.pop());
-        }
-    }
 }
