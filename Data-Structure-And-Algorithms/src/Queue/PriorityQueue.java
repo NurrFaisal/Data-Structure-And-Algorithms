@@ -10,6 +10,11 @@ public class PriorityQueue {
         if (count == items.length){
             throw new IllegalStateException();
         }
+        var i = shiftItems(item);
+        items[i] = item;
+        count++;
+    }
+    public int shiftItems(int item){
         int i;
         for (i = count - 1; i >= 0; i--){
             if (items[i] > item){
@@ -18,9 +23,9 @@ public class PriorityQueue {
                 break;
             }
         }
-        items[i + 1] = item;
-        count++;
+        return i + 1;
     }
+
     public int remove(){
         if (isEmpty()){
             throw new IllegalStateException();
