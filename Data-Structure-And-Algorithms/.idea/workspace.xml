@@ -54,6 +54,8 @@
       </method>
     </configuration>
     <configuration name="BinaryTree.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="BinaryTree.Main" />
       <module name="Data-Structure-And-Algorithms" />
       <extension name="coverage">
