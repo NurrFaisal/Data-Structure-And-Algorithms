@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import java.util.ArrayList;
+
 public class Tree {
     private class Node{
         private int value;
@@ -167,6 +169,33 @@ public class Tree {
         return  isBinarySearchTree(root.leftChild, min, root.value - 1)
                 && isBinarySearchTree(root.rightChild, root.value + 1, max);
     }
+
+    public ArrayList<Integer> getNodesAtDistance(int distace){
+        var list = new ArrayList<Integer>();
+        getNodesAtDistance(root, distace, list);
+        return list;
+    }
+
+    private void getNodesAtDistance(Node root, int distace, ArrayList<Integer> list){
+        if (root == null) {
+            return;
+        }
+        if(distace == 0){
+            list.add(root.value);
+            return;
+        }
+        getNodesAtDistance(root.leftChild, distace-1, list);
+        getNodesAtDistance(root.rightChild, distace-1, list);
+    }
+
+    public void traversLevelOrder(){
+        for (var i = 0; i <= height(); i++){
+            for (var value : getNodesAtDistance(i)){
+                System.out.println(value);
+            }
+        }
+    }
+
 
 
 
