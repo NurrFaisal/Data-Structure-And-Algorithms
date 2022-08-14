@@ -96,10 +96,37 @@ public class Tree {
         if(root == null){
             return -1;
         }
-        if (root.leftChild == null && root.rightChild == null) {
+        if (isLeaf(root)) {
             return 0;
         }
-        return 1 + Math.max(height(root.leftChild), height(root.rightChild););
+        return 1 + Math.max(height(root.leftChild), height(root.rightChild));
+    }
+
+    private boolean isLeaf(Node root){
+        return this.root.leftChild == null && this.root.rightChild == null;
+
+    }
+
+    public int min(){
+        if(root == null){
+            throw new IllegalStateException();
+        }
+        var current = root;
+        var last = current;
+        while (current  != null){
+            last = current;
+            current = current.leftChild;
+        }
+        return last.value;
+    }
+
+    private int min(Node root){
+        if(isLeaf(root)){}
+        return root.value;
+        var left = min(root.leftChild);
+        var right = min(root.rightChild);
+
+        return Math.max(Math.max(left, right), root.value)
     }
 
 }
