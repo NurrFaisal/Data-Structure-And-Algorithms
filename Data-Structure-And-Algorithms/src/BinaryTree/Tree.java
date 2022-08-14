@@ -121,12 +121,35 @@ public class Tree {
     }
 
     private int min(Node root){
-        if(isLeaf(root)){}
-        return root.value;
+        if(isLeaf(root)){
+            return root.value;
+        }
+
         var left = min(root.leftChild);
         var right = min(root.rightChild);
 
-        return Math.max(Math.max(left, right), root.value)
+        return Math.max(Math.max(left, right), root.value);
     }
+
+    public boolean equals(Tree other){
+        if (other == null){
+            return false;
+        }
+        return equals(root, other.root);
+
+    }
+
+    private boolean equals(Node first, Node second){
+        if(first == null && second == null){
+            return true;
+        }
+        if (first != null && second != null){
+            return first.value == second.value
+                    && equals(first.leftChild, second.leftChild)
+                    && equals(first.rightChild, second.rightChild);
+        }
+        return false;
+    }
+
 
 }
