@@ -39,7 +39,20 @@
       <recent name="LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinaryTree.Main">
+  <component name="RunManager" selected="Application.AVLTree.Main">
+    <configuration name="AVLTree.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AVLTree.Main" />
+      <module name="Data-Structure-And-Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AVLTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Array.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.Main" />
       <module name="Data-Structure-And-Algorithms" />
@@ -94,26 +107,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Queue.Main" />
-      <module name="Data-Structure-And-Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AVLTree.Main" />
         <item itemvalue="Application.BinaryTree.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Array.Main" />
         <item itemvalue="Application.HashTables.Main" />
-        <item itemvalue="Application.Queue.Main" />
       </list>
     </recent_temporary>
   </component>
