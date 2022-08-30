@@ -1,6 +1,8 @@
 package Trie;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class Trie {
     private class Node{
@@ -28,6 +30,12 @@ public class Trie {
         }
         public Node[] getChildren(){
             return children.values().toArray(new Node[0]);
+        }
+        public boolean hasChildren(){
+            return !children.isEmpty();
+        }
+        public void removeChild(char ch){
+            children.remove(ch);
         }
     }
 
@@ -71,5 +79,60 @@ public class Trie {
 //        for (var child : root.getChildren()){
 //            travers(child);
 //        }
+    }
+
+    public void remove(String word){
+        if(word == null){
+            return;
+        }
+        remove(root, word, 0);
+    }
+    private void remove(Node root, String word, int index){
+        if (index == word.length()){
+            root.isEndOfWord = false;
+            return;
+        }
+        var ch = word.charAt(index);
+        var child = root.getChild(ch);
+        if(child == null){
+            return;
+        }
+        remove(child, word, index + 1);
+        if (!child.hasChildren() && !child.isEndOfWord){
+            root.removeChild(ch);
+        }
+    }
+
+    public List<String> findWords(String prefix){
+        List<String> words = new ArrayList<>();
+        var lastNode = findLastNodeOf(prefix);
+        findWords(lastNode, prefix, words);
+        return words;
+    }
+    private void findWords(Node root, String prefix, List<String> words){
+        if(root == null){
+            return;
+        }
+        if(root.isEndOfWord){
+            words.add(prefix);
+        }
+        for (var child : root.getChildren()){
+            findWords(child, prefix + child.value, words );
+        }
+    }
+
+    private Node findLastNodeOf(String prefix){
+        if(prefix == null){
+            return null;
+        }
+        var current = root;
+        for (var ch : prefix.toCharArray()){
+            var child = current.getChild(ch);
+            if (child == null){
+                return null;
+            }
+            current = child;
+        }
+        return current;
     }
 }
