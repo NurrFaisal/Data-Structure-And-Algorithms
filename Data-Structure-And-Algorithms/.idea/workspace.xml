@@ -39,7 +39,7 @@
       <recent name="LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Trie.Main">
+  <component name="RunManager" selected="Application.Graph.Main">
     <configuration name="AVLTree.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AVLTree.Main" />
       <module name="Data-Structure-And-Algorithms" />
@@ -68,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Heap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Heap.Main" />
+    <configuration name="Graph.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graph.Main" />
       <module name="Data-Structure-And-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Heap.*" />
+          <option name="PATTERN" value="Graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList2.Main" />
+    <configuration name="Heap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Heap.Main" />
       <module name="Data-Structure-And-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LinkedList2.*" />
+          <option name="PATTERN" value="Heap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Graph.Main" />
         <item itemvalue="Application.Trie.Main" />
         <item itemvalue="Application.Heap.Main" />
         <item itemvalue="Application.AVLTree.Main" />
         <item itemvalue="Application.BinaryTree.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

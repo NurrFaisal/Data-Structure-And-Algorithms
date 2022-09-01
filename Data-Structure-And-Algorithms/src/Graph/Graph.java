@@ -23,7 +23,7 @@ public class Graph {
     public void addNode(String label){
         var node = new Node(label);
         nodes.putIfAbsent(label, node);
-        adjacencyList.putIfAbsent(node, new ArrayList<>())
+        adjacencyList.putIfAbsent(node, new ArrayList<>());
     }
     public void addEdge(String from, String to){
         var fromNode = nodes.get(from);
@@ -41,9 +41,28 @@ public class Graph {
         for(var source : adjacencyList.keySet()){
             var targets = adjacencyList.get(source);
             if(!targets.isEmpty()){
-                System.out.println(source + "is connected to " + targets);
+                System.out.println(source + " is connected to " + targets);
             }
         }
     }
-    
+    public void removeNode(String label){
+        var node = nodes.get(label);
+        if(node == null){
+            return;
+        }
+        for (var n : adjacencyList.keySet()){
+             adjacencyList.get(n).remove(node);
+        }
+        adjacencyList.remove(node);
+        nodes.remove(node);
+    }
+
+    public void removeEdge(String from, String to){
+        var fromNode = nodes.get(from);
+        var toNode = nodes.get(to);
+        if(fromNode == null || toNode == null){
+            return;
+        }
+        adjacencyList.get(fromNode).remove(toNode);
+    }
 }
