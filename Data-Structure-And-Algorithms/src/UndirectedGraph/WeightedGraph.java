@@ -2,10 +2,7 @@ package UndirectedGraph;
 
 import Graph.Graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class WeightedGraph {
     private class Node{
@@ -71,5 +68,22 @@ public class WeightedGraph {
                 System.out.println(node + " is connected to " + edges);
             }
         }
+    }
+
+    public class NodeEntry{
+        private Node node;
+        private int priority;
+
+        public NodeEntry(Node node, int priority) {
+            this.node = node;
+            this.priority = priority;
+        }
+    }
+
+    public int getShortedDistance(String from, String to){
+        PriorityQueue<NodeEntry> queue = new PriorityQueue<>(Comparator.comparingInt(ne -> ne.priority));
+
+
+        return 0;
     }
 }
