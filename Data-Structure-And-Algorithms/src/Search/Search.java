@@ -96,5 +96,6 @@ public class Search {
             int right = Math.min(bound, array.length - 1);
             return binarySearchRec(array, target, left, right);
         }
+        return -1;
     }
 }
