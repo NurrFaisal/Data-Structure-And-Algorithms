@@ -39,7 +39,7 @@
       <recent name="LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sort.Main">
+  <component name="RunManager" selected="Application.Search.Main">
     <configuration name="Graph.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Graph.Main" />
       <module name="Data-Structure-And-Algorithms" />
@@ -53,12 +53,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Heap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Heap.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UndirectedGraph.Main" />
       <module name="Data-Structure-And-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Heap.*" />
+          <option name="PATTERN" value="UndirectedGraph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UndirectedGraph.Main" />
+    <configuration name="Search.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Search.Main" />
       <module name="Data-Structure-And-Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UndirectedGraph.*" />
+          <option name="PATTERN" value="Search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Search.Main" />
         <item itemvalue="Application.Sort.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Graph.Main" />
         <item itemvalue="Application.Trie.Main" />
-        <item itemvalue="Application.Heap.Main" />
       </list>
     </recent_temporary>
   </component>
